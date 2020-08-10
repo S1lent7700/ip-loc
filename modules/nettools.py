@@ -37,7 +37,7 @@ class NetTools:
             for i in range(50, 2000):
                 try:
                     sock = socket(AF_INET, SOCK_STREAM)
-                    sock.settimeout(2)
+                    sock.settimeout(1)
                     # Connect value
                     connect = sock.connect_ex((self.host, int(i)))
                     #
